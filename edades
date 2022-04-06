@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "Ingresar total de alumnos"
+read total
+sum=0
+
+for(( i=1; i<=total; i++ ));
+do
+echo "Ingresa la edad: "
+read edad
+sum=$((sum + edad))
+done
+prom=$((sum / total))
+echo "El Promedio de edad es: ", $prom
+
